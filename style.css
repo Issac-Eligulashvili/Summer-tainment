@@ -1,3 +1,10 @@
+/* Fonts */
+@font-face {
+  font-family: Barbie;
+  src: url(fonts/Barbie-Font.ttf);
+}
+
+
 /* Use these custom variables... */
 :root {
     --polka-bg-image:
@@ -24,6 +31,15 @@
   }
 
   .barbie-logo {
-    width: 50%;
+    width: 40%;
     height: auto;
+    rotate: -7deg;
+  }
+
+  .barbie-font {
+      font-family: Barbie;
+  }
+
+  .font-page-text {
+    font-size: 150px;
   }
