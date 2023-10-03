@@ -1,0 +1,29 @@
+/* Use these custom variables... */
+:root {
+    --polka-bg-image:
+      radial-gradient(rgb(255, 255, 255) 28.4%, transparent 28.4%),
+      radial-gradient(rgb(255, 255, 255) 28.4%, transparent 28.4%);
+    --polka-bg-position: 0px 0px, 80px 80px;
+    --polka-bg-size: 160px 160px;
+    --polka-bg-color: rgb(254, 169, 202);
+  }
+  
+  html {
+    width: 100%;
+  }
+
+  /* ...or add this class to an element */
+  body {
+    background-image: 
+      radial-gradient(rgb(255, 255, 255) 28.4%, transparent 28.4%),
+      radial-gradient(rgb(255, 255, 255) 28.4%, transparent 28.4%);
+    background-position: 0px 0px, 80px 80px;
+    background-size: 160px 160px;
+    background-color: rgb(254, 169, 202);
+    width: 100%;
+  }
+
+  .barbie-logo {
+    width: 50%;
+    height: auto;
+  }
