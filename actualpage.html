@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="film-container">
+        <div class="animated-flicker">
+          <svg id="film-mask" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
+            width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 400 225">
+            <rect class="rectangle01" width="400" height="225"/>
+            <line id="line-h" class="line01" x1="0" y1="112.5" x2="400" y2="112.5"/>
+            <line id="line-v" class="line02" x1="200" y1="0" x2="200" y2="225"/>
+          </svg>
+          <svg id="film-countdown" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
+            width="100%" height="100%" viewBox="0 0 400 225">
+            <circle id="circle-outer" class="circle01" cx="200" cy="112.5" r="95"/>
+            <circle id="circle-inner" class="circle01" cx="200" cy="112.5" r="85"/>
+            <circle class="circle02 animated-rotate" cx="200" cy="112.5" r="494.5"/>
+            <g id="numbers" text-anchor="middle" class="no-select">
+              <text id="animated-text1" x="200.5" y="155">10</text>
+              <text id="animated-text2" x="200.5" y="155">9</text>
+              <text id="animated-text3" x="200.5" y="155">8</text>
+              <text id="animated-text4" x="200.5" y="155">7</text>
+              <text id="animated-text5" x="200.5" y="155">6</text>
+              <text id="animated-text6" x="200.5" y="155">5</text>
+              <text id="animated-text7" x="200.5" y="155">4</text>
+              <text id="animated-text8" x="200.5" y="155">3</text>
+              <text id="animated-text9" x="200.5" y="155">2</text>
+              <text id="animated-text10" x="200.5" y="155">1</text>
+            </g>
+          </svg>
+        </div>
+      </div>
+      
+      <div id="message-container">
+        <svg id="message" version="1.1" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
+          width="100%" height="100%" viewBox="0 0 400 225" class="no-select">
+          <text x="200" y="112.5" text-anchor="middle">Do something else&hellip;</text>
+        </svg>
+      </div>
+      <script src="script.js"></script>
+</body>
+</html>
