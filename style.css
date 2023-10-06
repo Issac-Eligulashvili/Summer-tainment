@@ -13,8 +13,10 @@
   --polka-bg-color: rgb(254, 169, 202);
 }
 
-html {
+html, body {
   width: 100%;
+  height: 100%;
+  margin: 0;
 }
 
 /* ...or add this class to an element */
@@ -61,12 +63,12 @@ body.main {
   user-select: none;
 }
 
+
 #film-container {
   width: 100%;
   height: 100%;
-  background: url("//res.cloudinary.com/thdoan/image/upload/v1509581279/countdown/film_grain-small.gif")
-    no-repeat;
-  background-size: 100% 100%;
+  background: url("//res.cloudinary.com/thdoan/image/upload/v1509581279/countdown/film_grain-small.gif");
+  background-size: cover;
 }
 #film-countdown,
 #message-container {
