@@ -13,6 +13,20 @@
   --polka-bg-color: rgb(254, 169, 202);
 }
 
+.nav-tabs {
+  --bs-nav-tabs-link-active-color: #fff;
+  --bs-nav-tabs-link-active-bg: #d25099;
+}
+
+.nav {
+  --bs-nav-link-color: #ffffff;
+  --bs-nav-link-hover-color: #f9dd9a;
+}
+
+.nav-color {
+  background-color: #d2509fb8; 
+}
+
 html, body {
   width: 100%;
   height: 100%;
@@ -78,15 +92,14 @@ body.main {
   width: 100%;
   height: 100%;
 }
-#message-container text {
-  font: normal 28px Calibri, sans-serif;
+#message-container {
   opacity: 0;
 }
 body.message #film-container {
   opacity: 0;
   transition: opacity 1.5s;
 }
-body.message #message-container text {
+body.message #message-container {
   opacity: 1;
   transition: opacity 1.5s;
 }
@@ -121,11 +134,11 @@ body.message #message-container text {
 
 .animated-flicker {
   height: 100%;
-  animation: flicker 10s 1;
+  animation: flicker 3s 1;
   opacity: 0.2;
 }
 .animated-rotate {
-  animation: rotate 1s 10;
+  animation: rotate 1s 3;
 }
 #animated-text1 {
   animation: countdown 1s 1;
@@ -139,34 +152,7 @@ body.message #message-container text {
   animation: countdown 1s 1;
   animation-delay: 2s;
 }
-#animated-text4 {
-  animation: countdown 1s 1;
-  animation-delay: 3s;
-}
-#animated-text5 {
-  animation: countdown 1s 1;
-  animation-delay: 4s;
-}
-#animated-text6 {
-  animation: countdown 1s 1;
-  animation-delay: 5s;
-}
-#animated-text7 {
-  animation: countdown 1s 1;
-  animation-delay: 6s;
-}
-#animated-text8 {
-  animation: countdown 1s 1;
-  animation-delay: 7s;
-}
-#animated-text9 {
-  animation: countdown 1s 1;
-  animation-delay: 8s;
-}
-#animated-text10 {
-  animation: countdown 1s 1;
-  animation-delay: 9s;
-}
+
 
 @keyframes countdown {
   0% {
@@ -219,3 +205,80 @@ body.message #message-container text {
     stroke-dasharray: 3200 0;
   }
 }
+
+/*  */
+.navbar-toggler {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  transition: .5 ease-in-out;
+  color: transparent;
+  border: none !important;
+}
+
+.navbar-toggler, 
+.navbar-toggler:focus,
+.navbar-toggleractive,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+  border: 0;
+}
+
+.navbar-toggler span {
+  margin: 0;
+  padding: 0;
+}
+
+.toggler-icon {
+  display: block;
+  position: absolute;
+  /* height of bar */
+  height: 3px;
+  width: 100%;
+  background: white;
+  border-radius: 3px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+.middle-bar {
+  margin-top: 0px;
+}
+
+/* when clicked */
+
+.navbar-toggler .top-bar {
+  margin-top: 0px;
+  transform: rotate(135deg);
+}
+
+.navbar-toggler .middle-bar {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar {
+  margin-top: 0px;
+  transform: rotate(-135deg);
+}
+
+/* when navbar collapsed */
+
+.navbar-toggler.collapsed .top-bar {
+  margin-top: -17px;
+  transform: rotate(0deg);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+  margin-top: 18px;
+  transform: rotate(0deg);
+}
+
