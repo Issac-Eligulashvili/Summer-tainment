@@ -6,6 +6,9 @@
     <title>Barbie</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Urbanist&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
   </head>
   <body>
@@ -46,19 +49,54 @@
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="nav nav-tabs">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Active</a>
+                    <a class="nav-link active" aria-current="page" href="#trailer">Summary/Trailer</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#cast">Cast</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#movie-rating">Movie Rating</a>
                   </li>
                 </ul>
               </div>
             </div>
           </nav>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/pBk4NYhWNMM?si=iZ-zDetCuCc3THFk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <div class="vid-container m-auto" id="trailer">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/pBk4NYhWNMM?si=iZ-zDetCuCc3THFk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          
+          
+          <div class="row about-movie m-0">
+            <div class="col-12">
+              <div class="card" style="width: 100%;">
+                <div class="card-body">
+                  <h5 class="card-title pink-bg text-white Urbanist text-center">Summary</h5>
+                  <p class="card-text">The Barbie movie is a vibrant and enchanting animated film that follows the adventures of Barbie, a fashion-forward and adventurous young woman who embarks on a fantastical journey. Alongside her friends and companions, Barbie navigates a captivating world filled with magic, challenges, and self-discovery. The movie is a delightful blend of dazzling animation, catchy music, and heartwarming storytelling that appeals to audiences of all ages. As Barbie faces various trials and tribulations, she learns valuable life lessons about friendship, courage, and the importance of staying true to oneself. With its engaging plot and empowering messages, the Barbie movie offers a delightful and inspiring cinematic experience for viewers young and old.</p>
+                </div>
+              </div>
+            </div>
+            <h3 class="summary-text"></h2>
+          </div>
+          <h1 class="pink-bg text-center Urbanist text-white cast-header" id="cast">Cast</h1>
+          <ul class="cast-list">
+            <li>Margot Robbie - Barbie (one of the main characters who finds out the meaning of feminism and women empowermemt)</li>
+            <li>Ryan Gosling - Ken (the other main character who follows barbies journey into the real world and learns hwo to live his life without Barbie being the center of it)</li>
+            <li>Will Ferrell - Mattel CEO (Antagonist in the movie who tries to stop Barbie in the real world)</li>
+            <li>Michael Cera - Allan 🐐 (comedic relief character)</li>
+            <li>America Ferrera - Gloria (woman who helps Barbie with her journey in the real world)</li>
+          </ul>
+          <h1 class="pink-bg text-center Urbanist text-white cast-header" id="movie-rating">Movie Rating</h1>
+          <p class="movie-ra two-rem">
+            The movie was a 6/10 because it was somewhat just boring. The idea of feminism and women empowerment was overused and forced througout the movie taking away from the enjoyable experience. There were moments of good comedy and good writing espically with the use of the caracter Allan, who was comedic relief. The idea of Ken finding out about being a man and not only living for Barbie was somewhat confusing and throughout the movie it was hard to track.
+          </p>
+          <div class="vid-container m-auto">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/b8jljxkzcKo?si=hMtcrcs-sgBvR_LW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          <footer class="text-center text-white Urbanist">
+              Created by Issac Eligulashvili© <br>
+              <a href="mailto:525ieligulashvili@frhsd.com" class="text-decoration-underline text-white">525ieligulashvili@frhsd.com</a></p>
+          </footer>
+          
         </div>
         <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
